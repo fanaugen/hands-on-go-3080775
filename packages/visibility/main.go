@@ -4,6 +4,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello Gopher!")
-	// fmt.newPrinter()
+	fmt.Println("Trying to access a private function...")
+	fmt.newPrinter()
 }
