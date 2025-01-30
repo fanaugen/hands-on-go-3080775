@@ -5,5 +5,5 @@ import "fmt"
 
 func main() {
 	fmt.Println("Trying to access a private function...")
-	fmt.newPrinter()
+	// fmt.newPrinter() // <== this would not compile
 }
