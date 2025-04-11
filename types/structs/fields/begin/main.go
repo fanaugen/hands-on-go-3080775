@@ -16,5 +16,4 @@ func main() {
 	fmt.Printf("%v\n", king)
 	// print the internal representation of the struct
 	fmt.Printf("%#v\n", king) // %#v is like `inspect` in ruby
-	fmt.Printf("The type of local variable `king` is: %T\n", king)
 }
