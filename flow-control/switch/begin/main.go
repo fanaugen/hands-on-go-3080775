@@ -7,14 +7,13 @@ import (
 )
 
 func main() {
-	os := runtime.GOOS
-
 	// refactor with switch statement
-	if os == "linux" || os == "darwin" || os == "unix" {
+	switch os := runtime.GOOS; os {
+	case "linux", "darwin", "unix":
 		fmt.Println("*nix variant")
-	} else if os == "windows" {
-		fmt.Println("Windows")
-	} else {
+	case "windows":
+		fmt.Println("Microsoft Windows")
+	default:
 		fmt.Printf("%s.\n", os)
 	}
 }
